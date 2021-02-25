@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mathlab</title>
+    <script type="text/javascript" src="bootstrap/vendors/bootstrap/js/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/vendors/bootstrap/js/popper.min.js"></script>
+   <script type="text/javascript" src="bootstrap/vendors/bootstrap/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="bootstrap/vendors/mdb/js/mdb.min.js"></script>
+   <script type="text/javascript" src="bootstrap/vendors/mdb/js/jquery-3.5.1.min.map"></script>
+   <link rel="stylesheet" type="text/css" href="bootstrap/vendors/bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="bootstrap/vendors/mdb/css/mdb.css">
+   <link rel="stylesheet" href="css/landing.css">
+   <script src="javascript/mathlab.js"></script>
+
+
+</head>
+<body>
+    <div class="container-fluid">
+
+
+    <h1><b><i>TRIGONOMETRY()</i></b></h1>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <img src="images/geniuskac.jpg" class="img-thumbnail">
+        <h2 style="font-size:40px;margin-left: 20px;margin-top: 40px;color:darkblue"><b><i>mathlab</i></b></h2>
+        <a href="/trig">TRIGONOMETRY</a>
+        <a href="/Matrix">MATRICES</a>
+        <a href="/Equations">EQUATIONS</a>
+        <a href="/probability">PROBABILITY</a>
+      </div>
+      
+      <div id="main">
+        <span style="font-size:30px;cursor:pointer;color:darkblue;" onclick="openNav()">&#9776;TOPICS</span>
+      </div>
+    <div class="container">
+    <div class="row" >
+     <div class="card-deck">
+      <div class="card" style="margin-left: 30px;width: 500px;height: 700px;">
+        <div class="col-md-6">
+            <p><b>To calculate for the HYPOTENUSE When you were given the OPPOSITE and ADJACENT only</b></p>
+           
+            <input type="text" id="opp" placeholder="Opposite" style="border-radius: 10px;width: 100px;"><button onclick="opP()"><b><i>Opposite</i></b></button><br><br>
+            <input type="text" id="adj" placeholder="Adjacent" style="border-radius: 10px;width: 100px;"><button onclick="adJ()" ><b><i>Adjacent</i></b></button><br><br>
+
+        </div>
+     </div>
+        <div class="card" style="width: 500px;margin-left: 20px;height: 700px;">
+             <h2 style="text-decoration-line: underline;">Opposite</h2>
+             <p id="o" style="font-size: 40px;"><b></b></p>
+             <h2  style="text-decoration-line: underline;">Adjacent</h2>
+             <p id="a" style="font-size: 40px;"><b></b></p>
+             <h2 style="margin-top: 40px;text-decoration-line: underline;">hypotenuse</h2>
+             
+             <span id="answer" style="font-size:40px;"></span>
+        
+            <button onclick="pythaGoras()"><b>Answer</b></button><br>
+            <button  onclick="deLete()"><b>clear</b></button>
+            
+        
+        </div>
+    
+
+
+     </div> 
+    </div>
+    
+    </div>
+    <hr>
+    
+    <div class="container">
+        <div class="row" >
+        <div class="card-deck" >  
+         <div class="card" style="margin-left: 30px;width: 500px;height: 600px;">
+            <div class="col-md-6">
+                <p><b>To calculate for the OPPOSITE When you were given the HYPOTENUSE and ADJACENT only</b></p>
+           
+                <input type="text" id="hy" placeholder="hypotenuse" style="margin-top: 40px;border-radius:10px;width: 100px;"><button onclick="hyP()" ><b><i>hypotenuse</i></b></button><br><br>
+                <input type="text" id="ad" placeholder="Adjacent" style="border-radius: 10px;width: 100px;"><button onclick="adjA()" ><b><i>Adjacent</i></b></button><br><br>
+            </div>
+         </div>
+            <div class="card" style="width: 500px;margin-left: 20px;height: 600px;">
+                 <h2 style="margin-top: 40px;text-decoration-line: underline;">hypotenuse</h2>
+                 <p id="hypo" style="color:red;font-size: 50px;"></p>
+                 <h2 style="margin-top: 40px;text-decoration-line: underline;">Adjacent</h2>
+                 <p id="hypot" style="color:red;font-size: 50px;"></p>
+                 <h2 style="text-decoration-line: underline;">Opposite</h2>
+                 <p id="oppanswer" style="font-size: 60px;"><b></b></b></p>
+                <button onclick="oppAns()"><b>Answer</b></button><br>
+                <button  onclick="cleAr()"><b>clear</b></button>
+            </div>
+    
+          </div> 
+        
+          </div>
+          <hr>
+          <div class="container">
+            <div class="row" >
+            <div class="card-deck" >  
+             <div class="card" style="margin-left: 30px;width: 500px;height: 600px;">
+                <div class="col-md-6">
+                    <p><b>To calculate for the ADJACENT When you were given the OPPOSITE and HYPOTENUSE only</b></p>
+               
+                    <input type="text" id="hypotenuse" placeholder="hypotenuse" style="margin-top: 40px;border-radius:10px;width: 100px;"><button onclick="hypoT()" ><b><i>hypotenuse</i></b></button><br><br>
+                    <input type="text" id="Opposite" placeholder="Opposite" style="border-radius: 10px;width: 100px;"><button onclick="oPP()" ><b><i>opposite</i></b></button><br><br>
+                </div>
+             </div>
+                <div class="card" style="width: 500px;margin-left: 20px;height: 600px;">
+                     <h2 style="margin-top: 40px;text-decoration-line: underline;">hypotenuse</h2>
+                     <p id="hypote" style="color:red;font-size: 50px;"></p>
+                     <h2 style="margin-top: 40px;text-decoration-line: underline;">Opposite</h2>
+                     <p id="opposit" style="color:red;font-size: 50px;"></p>
+                     <h2 style="text-decoration-line: underline;">Adjacent</h2>
+                     <p id="z" style="font-size: 60px;"><b></b></b></p>
+                    <button onclick="adJace()"><b>Answer</b></button><br>
+                    <button  onclick="canCel()"><b>clear</b></button>
+                </div>
+              </div> 
+              </div>
+        </div>
+        <hr>
+        <div class="container">
+
+            <div class="row" >
+               <div class="card" id="see" style="margin-left: 30px;width: 1200px;height: 1700px;">
+                 <h1><b><i>SOHCAHTOA</i></b></h2>
+                    <img src="images/sohcahtoa.jpg" class="img-thumbnail">
+                    <h1 id="hide"><b>for SOH</b></h1>
+                    <img src="images/SOH.jpg" class="img-thumbnail">
+                    <div  id="show"class="row card-deck" style="margin-top:20px;">
+                       <div class="col-sm-6 card"style="margin-right:20px;height: 300px;">
+                        <div>
+                          <p style="font-size:20px;color:darkblue;"><b>   You can simply inputs the values of the opposite and the hypotenuse with the inputs below,Then by clicking the answer button you will get the value of the Angle.</b></p>
+                         <input type="text" id="s" placeholder="hypotenuse"><button onclick="hSIN()">hypotenuse</button><br><br>
+                         <input type="text" id="h" placeholder="opposite"><button onclick="oSIN()">opposite</button><br>
+                        </div>
+                       </div>
+                      <div class="col-sm-5 card">
+                         <h2 style="text-decoration-line: underline;">hypotenuse</h2>
+                         <p id="g"><b><i></i></b></p>
+                         <h2 style="text-decoration-line: underline;">opposite</h2>
+                         <p id="k"><b><i></i></b></p>
+                         <button id="an" onclick="sOH()"><b>ANSWER</b></button>
+                         <h2 style="text-decoration-line: underline;">Angle=<p id="i"><b></b></p></h2>
+                         <button onclick="cAncel()"><b>clear</b></button>
+                      </div>
+                   </div>
+               </div>
+            
+            
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="row" >
+               <div class="card" id="see" style="margin-left: 30px;width: 1200px;height: 1400px;">
+                 <h1><b><i>COSINE RULE</i></b></h2>
+                    <img src="images/sohcahtoa.jpg" class="img-thumbnail">
+                    <hr>
+                    <div class="col-sm-10">
+                        <h1 style="margin-left:45px;"><b><i>TO GET THE SIDES OF A TRIANGLE USING COSINE RULE</i></b></h1>
+                     <input type="text"  id="m" placeholder="hypotenuse"><button onclick="cAt()">hypotenuse</button><br><br>
+                     <input type="text" id="n" placeholder="adjacent"><button onclick="rAt()">Adjacent</button><br><br>
+                     <input type="number" id="ze" placeholder="ANGLE" onclick="dAtee()"><button>enter Angle</button>
+                    
+                    
+                         <h2 style="text-decoration-line: underline;">hypotenuse</h2>
+                         <p id="p"><b><i></i></b></p>
+                         <h2 style="text-decoration-line: underline;">Adjacent</h2>
+                         <p id="q"><b><i></i></b></p>
+                         <h2 style="text-decoration-line: underline;">ANGLE</h2>
+                         <p id="ge"><b><i></i></b></p>
+
+                         <button id="at" onclick="cosineRule()"><b>ANSWER</b></button>
+                         <h2 style="text-decoration-line: underline;">Opposite=<p id="ki" style="font-size:20px ;"><b></b></p></h2>
+                          <button onclick="cLear()">clear</button>
+                      </div>
+                    </div>
+                    
+            
+            
+            </div>
+        </div>
+     -->
+ <div class="row justify-content-center" style="background-color: black;padding:60px;">
+
+    <div class="col-sm-4">
+        <ul style="color: white;">
+          <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <ul style="color: white;">
+          <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <ul style="color: white;">
+          <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+           <li>mathlabs</li>
+        </ul>
+    </div>
+    <h2 style="color:white;"><b>welcome to the future!!!</b></h2>
+</div>
+
+
+
+
+    </div>
+    
+</body>
+</html>
